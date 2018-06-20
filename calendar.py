@@ -1,12 +1,14 @@
-from Tkinter import *
+from tkinter import *
 import datetime
 import calendar
 yy=datetime.date.today().year
 mm=datetime.date.today().month
+dd=datetime.date.today().day
+
 root = Tk()
 text = Text(root)
 text.insert(INSERT, calendar.month(yy, mm))
-text.insert(END, " ")
+text.insert(END, "El día de hoy es: " + str(dd))
 text.pack()
 text.tag_add("here", "1.0", "2.0")
 text.tag_add("start", "2.0", "3.0")
