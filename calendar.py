@@ -18,3 +18,7 @@ text.tag_config("start", background = "black", foreground = "white")
 text.tag_config("fart", background = "white", foreground = "black")
 root.mainloop()
  
+import openpyxl
+doc = openpyxl.load_workbook('modificar_excel.xlsx')
+doc.get_sheet_names()
+[u'Hoja1', u'Hoja2', u'Hoja3']
