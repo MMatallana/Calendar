@@ -1,24 +1,16 @@
-from tkinter import *
 import datetime
-import calendar
-yy=datetime.date.today().year
-mm=datetime.date.today().month
-dd=datetime.date.today().day
-
-root = Tk()
-text = Text(root)
-text.insert(INSERT, calendar.month(yy, mm))
-text.insert(END, "El día de hoy es: " + str(dd))
-text.pack()
-text.tag_add("here", "1.0", "2.0")
-text.tag_add("start", "2.0", "3.0")
-text.tag_add("fart", "3.0", "8.0")
-text.tag_config("here", background = "skyblue", foreground = "black")
-text.tag_config("start", background = "black", foreground = "white")
-text.tag_config("fart", background = "white", foreground = "black")
-root.mainloop()
- 
-import openpyxl
-doc = openpyxl.load_workbook('modificar_excel.xlsx')
-doc.get_sheet_names()
-[u'Hoja1', u'Hoja2', u'Hoja3']
+l={}
+d=dd=datetime.date.today().day
+m=datetime.date.today().month
+y=datetime.date.today().year
+print("El día de hoy es: " + str(d)+ "/" +str(m)+ "/" + str(y))
+n=int(input("Si desea ver los pendientes pulse 1 y si desea añadir una fecha pulse 2: "))
+if n==1:
+ print(l)
+elif n==2:
+ i=str(input("Nombre: ")
+ j=str(input("Fecha: ")
+ k=str(input("Nombre")
+else:
+	print("no hemos añadido esa función")
+	
