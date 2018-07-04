@@ -1,5 +1,6 @@
 import datetime
 l={}
+data=open("datos.txt","r+")
 d=dd=datetime.date.today().day
 m=datetime.date.today().month
 y=datetime.date.today().year
@@ -8,9 +9,9 @@ n=int(input("Si desea ver los pendientes pulse 1 y si desea añadir una fecha pu
 if n==1:
  print(l)
 elif n==2:
- i=str(input("Nombre: ")
- j=str(input("Fecha: ")
- k=str(input("Nombre")
+	i=str(input("Nombre: "))
+	j=str(input("Fecha: "))
+	l.update({j:i})
+	print(l)
 else:
 	print("no hemos añadido esa función")
-	
