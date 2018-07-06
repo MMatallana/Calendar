@@ -54,7 +54,7 @@ elif n==2:
 	j=str(input("Fecha: "))
 	l.update({j:i})
 	data.write(j+":"+i)
-	data.write("")
+	data.write("\n")
 	print(l)
 else:
 	print("no hemos añadido esa función")
